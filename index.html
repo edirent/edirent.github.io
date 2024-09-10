@@ -33,11 +33,16 @@
             border-radius: 8px;
         }
         .image {
-            width: 80%; /* Adjust size as needed */
-            height: auto;
+            width: 20%; /* Adjusted to 1/4 of the size */
             border-radius: 50%;
-            margin-bottom: 20px;
+            overflow: hidden; /* Ensures the image stays within the border */
+            margin-bottom: 20px; /* Adds space below the image */
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes bottom space/gap */
         }
         footer {
             text-align: center;
@@ -58,14 +63,14 @@
     <div class="right">
         <div class="section">
             <h1>About Me</h1>
-            <p>I'm a sophomore at the University of Illinois at Urbana-Champaign, majoring in Computer Science and Mathematics. </p>
-            <p>>I have an interest in Machine Learning Systems and Generative AI. 
-            </p>
-            <p>I have strong passions for quantitative trading, options, cryptocurrencies, and real estate.</p>
+            <p>I'm a sophomore at the University of Illinois at Urbana-Champaign, majoring in Computer Science and Mathematics.</p>
+            <p> I have an interest in Machine Learning Systems and Generative AI </p>
+            <p>I am deeply passionate about quantitative trading, options, cryptocurrencies, and real estate.</p>
         </div>
         <div class="section">
             <h2>Publications</h2>
             <ul>
+                <!-- Add more publications as needed -->
             </ul>
         </div>
     </div>

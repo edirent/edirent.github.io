@@ -10,39 +10,43 @@
             font-family: 'Arial', sans-serif;
             height: 100%;
             display: flex;
+            background-color: #f4f4f9;
         }
         .left {
-            width: 50%;
+            width: 30%; /* 30% width as per 3:7 ratio */
             padding: 20px;
-            box-sizing: border-box; /* Includes padding in width calculation */
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center aligns the content on the left side */
-            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         .right {
-            width: 50%;
+            width: 70%; /* 70% width as per 3:7 ratio */
             padding: 20px;
-            box-sizing: border-box; /* Includes padding in width calculation */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .section {
-            background-color: #ffffff;
-            margin: 10px 0;
+        .section, .image-box {
+            background-color: #fff;
             padding: 15px;
+            margin: 10px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             border-radius: 8px;
+            width: 100%;
+        }
+        .image-box {
+            display: flex;
+            justify-content: center; /* Center the image inside the block */
         }
         .image {
-            width: 20%; /* Adjusted to 1/4 of the size */
+            width: 80%; /* Smaller size for the image */
             border-radius: 50%;
-            overflow: hidden; /* Ensures the image stays within the border */
-            margin-bottom: 20px; /* Adds space below the image */
+            overflow: hidden;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .image img {
-            width: 100%;
-            height: auto;
-            display: block; /* Removes bottom space/gap */
         }
         footer {
             text-align: center;
@@ -57,20 +61,25 @@
 </head>
 <body>
     <div class="left">
-        <img src="https://edirent.github.io/IMG_5215(20240207-221551).JPG" alt="Profile Image" class="image">
-        <p>Email: <a href="mailto:sz73@illinois.edu">sz73@illinois.edu</a></p>
+        <div class="image-box">
+            <img src="https://edirent.github.io/IMG_5215(20240207-221551).JPG" alt="Profile Image" class="image">
+        </div>
+        <div class="section">
+            <h1>Contact</h1>
+            <p>Email me at: <a href="mailto:sz73@illinois.edu">sz73@illinois.edu</a></p>
+        </div>
     </div>
     <div class="right">
         <div class="section">
             <h1>About Me</h1>
-            <p>I'm a sophomore at the University of Illinois at Urbana-Champaign, majoring in Computer Science and Mathematics.</p>
-            <p> I have an interest in Machine Learning Systems and Generative AI </p>
+            <p>I'm a sophomore at the University of Illinois at Urbana-Champaign, majoring in Computer Science and Mathematics. </p>
+            <p>I have an interest in Machine Learning Systems and Generative AI.</p>
             <p>I am deeply passionate about quantitative trading, options, cryptocurrencies, and real estate.</p>
         </div>
         <div class="section">
             <h2>Publications</h2>
             <ul>
-                <!-- Add more publications as needed -->
+                <!-- Additional publications can be listed here -->
             </ul>
         </div>
     </div>

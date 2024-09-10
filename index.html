@@ -8,18 +8,22 @@
             height: 100%;
             margin: 0;
             font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9; /* Light grey background for a subtle look */
         }
         .container {
             display: flex;
             align-items: flex-start; /* Align items at the top */
             justify-content: center; /* Center horizontally */
-            padding-top: 20px; /* Adds space on the top */
+            padding-top: 40px; /* Adds more space on the top */
         }
         .image {
             flex: 0 1 200px; /* Flex-basis of 200px, can grow and shrink */
             text-align: center; /* Centers the image */
-            border-radius: 50%; /* Makes the image round */
+            border-radius: 50%; /* Ensures the image is a perfect circle */
             overflow: hidden; /* Ensures the image stays within the border */
+            border: 5px solid #fff; /* Adds a white border around the image */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+            margin-right: 20px; /* Adds space between the image and the text */
         }
         .image img {
             width: 100%;
@@ -27,17 +31,23 @@
             display: block; /* Removes bottom space/gap */
         }
         .section {
-            flex: 1; /* Takes up remaining space */
-            padding: 0 20px; /* Adds horizontal padding */
-            font-size: 18px; /* Font size for text and publications */
+            flex: 2; /* Allows the text sections to take up more space */
+            padding: 20px; /* Adds more padding around the text */
+            background-color: #ffffff; /* White background for the text sections */
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds shadow to the text sections */
+            border-radius: 8px; /* Rounds the corners of the text sections */
         }
         footer {
             text-align: center;
             width: 100%;
             position: relative; /* Changed to relative */
-            background-color: #f8f9fa;
+            background-color: #fff;
             padding: 10px 0;
             color: #333;
+            font-size: 16px; /* Slightly larger font size for better readability */
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Adds shadow at the top of the footer */
+            margin-top: 20px; /* Adds space before the footer */
         }
     </style>
 </head>
@@ -48,9 +58,8 @@
         </div>
         <div class="section">
             <h1>About Me</h1>
-            <p>I'm a sophomore at the University of Illinois at Urbana-Champaign, majoring in Computer Science and Mathematics. I have an interest in Machine Learning Systems and Generative AI. Additionally, I am deeply fascinated by the dynamic fields of quantitative trading, options, cryptocurrencies, and real estate, exploring how technological innovations can transform these areas.</p>
+            <p>I'm a sophomore at the University of Illinois at Urbana-Champaign, majoring in Computer Science and Mathematics. I have an interest in Machine Learning Systems and Generative AI, with a strong passion for quantitative trading, options, cryptocurrencies, and real estate.</p>
         </div>
-
         <div class="section">
             <h1>Contact</h1>
             <p>Email me at: <a href="mailto:sz73@illinois.edu">sz73@illinois.edu</a></p>
@@ -58,9 +67,14 @@
         <div class="section">
             <h2>Publications</h2>
             <ul>
+                <li>Publication 1: Title - Journal Year</li>
+                <li>Publication 2: Title - Journal Year</li>
                 <!-- Add more publications as needed -->
             </ul>
         </div>
     </div>
+    <footer>
+        <p>More ways to contact me coming soon!</p>
+    </footer>
 </body>
 </html>

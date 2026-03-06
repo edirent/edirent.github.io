@@ -1,209 +1,498 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
+  <!-- basic page needs
+  ================================================== -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Songhao Zhang | Personal Homepage</title>
-  <meta name="description" content="Songhao Zhang - Mathematics and Computer Science student at UIUC, research and engineering portfolio.">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/songhao.css">
+  <meta name="description" content="Songhao Zhang - UIUC Mathematics and Computer Science student.">
+  <meta name="author" content="Songhao Zhang">
+
+  <!-- mobile specific metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- script
+  ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
+
+  <!-- favicons
+  ================================================== -->
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body>
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top">Songhao Zhang</a>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
+<body id="top">
+
+  <!-- header
+  ================================================== -->
+  <header>
+    <div class="row">
+      <div class="top-bar">
+        <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+        <div class="logo">
+          <a href="index.html">Songhao Zhang</a>
+        </div>
+
+        <nav id="main-nav-wrap">
+          <ul class="main-navigation">
+            <li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
+            <li><a class="smoothscroll" href="#about" title="">About</a></li>
+            <li><a class="smoothscroll" href="#Work" title="">Resume</a></li>
+            <li><a class="smoothscroll" href="#MORE" title="">Projects &amp; Skills</a></li>
+            <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /top-bar -->
     </div>
+    <!-- /row -->
   </header>
+  <!-- /header -->
 
-  <main>
-    <section class="hero section" id="home" style="--delay:0.05s">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Mathematics + Computer Science at UIUC</p>
-          <h1>Building high-performance systems for ML, compilers, and trading infrastructure.</h1>
-          <p class="hero-summary">
-            I am Songhao Zhang, a B.S. student at the University of Illinois Urbana-Champaign.
-            My work spans parallel algorithms, compiler optimization, GPU kernels, distributed runtime systems, and low-latency infrastructure.
+  <!-- intro section
+  ================================================== -->
+  <section id="intro">
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+      <div class="row">
+        <div class="col-twelve">
+          <h5>Hello, World.</h5>
+          <h1>I'm Songhao Zhang.</h1>
+
+          <p class="intro-position">
+            <span>B.S. Mathematics + Computer Science @ UIUC</span>
+            <span>Systems / ML Research Engineer</span>
           </p>
-          <div class="cta-group">
-            <a class="btn btn-primary" href="mailto:sz73@illinois.edu">Email Me</a>
-            <a class="btn btn-ghost" href="https://github.com/Edirent" target="_blank" rel="noopener">GitHub</a>
-          </div>
-          <div class="quick-links">
-            <a href="mailto:sz73@illinois.edu">sz73@illinois.edu</a>
-            <a href="tel:+17085139409">+1-708-513-9409</a>
-            <a href="https://linkedin.com/in/songhao-zhang" target="_blank" rel="noopener">linkedin.com/in/songhao-zhang</a>
-          </div>
-        </div>
 
-        <aside class="hero-card">
-          <img src="images/IMG_3734(20231010-140620).JPG" alt="Songhao Zhang portrait">
-          <div class="hero-meta">
-            <p><span>Degree</span>B.S. Mathematics and Computer Science</p>
-            <p><span>School</span>University of Illinois Urbana-Champaign</p>
-            <p><span>GPA</span>3.85 / 4.0</p>
-            <p><span>Expected Graduation</span>May 2027</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="education" style="--delay:0.12s">
-      <div class="container">
-        <h2>Education</h2>
-        <article class="card single-card">
-          <h3>B.S. in Mathematics and Computer Science</h3>
-          <p class="card-subtitle">University of Illinois Urbana-Champaign, Champaign, IL</p>
-          <p class="card-meta">Aug 2023 - May 2027</p>
-          <p class="card-meta">GPA: 3.85 / 4.0</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="publications" style="--delay:0.18s">
-      <div class="container">
-        <h2>Publications</h2>
-        <div class="grid two">
-          <article class="card">
-            <h3>Mobius: A Millisecond-Scale Compiler for Bivariate Bicycle Codes via Frequency-Domain Decomposition</h3>
-            <p class="card-meta">Submitted to ASPLOS 2026</p>
-            <p class="card-body">S. Zhang, K. Yin, Y. Ding.</p>
-          </article>
-          <article class="card">
-            <h3>Morpheus: High-Throughput Serving for Diffusion Transformers with Distributed Cache Scheduling</h3>
-            <p class="card-meta">Submitted to SOSP 2026</p>
-            <p class="card-body">S. Xie, C. Zhang, S. Zhang, P. He, F. Lai, T. Zhong.</p>
-          </article>
+          <a class="button stroke smoothscroll" href="#about" title="">Learn More</a>
         </div>
       </div>
-    </section>
-
-    <section class="section" id="experience" style="--delay:0.24s">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-head">
-              <h3>Machine Learning Engineer Intern</h3>
-              <p>Aug 2025 - Dec 2025</p>
-            </div>
-            <p class="card-subtitle">TAQA Water Solutions, Abu Dhabi, UAE</p>
-            <ul>
-              <li>Architected a distributed anomaly detection system for 150+ facility streams and engineered a hybrid RAG pipeline that combines sparse and dense retrieval over technical telemetry.</li>
-              <li>Designed a Hierarchical Memory Router with permutation matrices and HNSW indices to align cross-table temporal dependencies while minimizing index overhead.</li>
-              <li>Deployed local LLM serving on constrained clusters and reduced inference latency by 40% using pipeline parallelism and optimized KV-cache management.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-head">
-              <h3>Research Assistant (Advisor: Prof. Yufei Ding)</h3>
-              <p>May 2025 - Aug 2025</p>
-            </div>
-            <p class="card-subtitle">UC San Diego, San Diego, CA</p>
-            <ul>
-              <li>Designed a massively parallel decoding algorithm for Quantum LDPC codes, replacing O(N^2) sparse-matrix operations with O(N log N) blockwise polynomial evaluations over finite fields.</li>
-              <li>Implemented custom CUDA kernels for algebraic parameter determination, achieving less than 1ms real-time compilation and 10x lower logical error rates versus standard libraries.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-head">
-              <h3>Research Assistant (Advisor: Prof. Fan Lai)</h3>
-              <p>May 2024 - May 2025</p>
-            </div>
-            <p class="card-subtitle">University of Illinois Urbana-Champaign, Champaign, IL</p>
-            <ul>
-              <li>Co-developed Morpheus, a distributed serving system for Diffusion Transformers, and implemented a compiler-assisted scheduler to exploit spatial sparsity and prune redundant computation.</li>
-              <li>Engineered dynamic work-stealing and asynchronous memory migration protocols, increasing cluster throughput by 2.1x and reducing tail latency by 20% on A100 GPUs.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects" style="--delay:0.3s">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="grid two">
-          <article class="card">
-            <h3>Helix: HFT Infrastructure and Execution Engine</h3>
-            <ul>
-              <li>Architected a deterministic order-book replay engine in C++ using cache-line aligned memory pools and zero-copy paths to reduce TLB misses.</li>
-              <li>Achieved less than 800ns tick-to-trade simulation latency through a lock-free ring buffer and kernel context switch avoidance.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>SREGym: AI-Native SRE Benchmark Platform</h3>
-            <ul>
-              <li>Built a Kubernetes-based benchmark environment covering 86+ reliability scenarios across microservices such as DeathStarBench and TiDB.</li>
-              <li>Integrated multi-modal observability (logs, traces, eBPF) for system diagnosis and evaluation. Advisor: Prof. Tianyin Xu.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="skills" style="--delay:0.36s">
-      <div class="container">
-        <h2>Technical Skills</h2>
-        <div class="grid two">
-          <article class="card">
-            <h3>Core Specialties</h3>
-            <div class="tag-list">
-              <span>Parallel Algorithms</span>
-              <span>Compiler Optimization</span>
-              <span>GPU Kernel Design</span>
-              <span>Distributed Runtime</span>
-              <span>HFT Infrastructure</span>
-            </div>
-          </article>
-          <article class="card">
-            <h3>Languages and Tools</h3>
-            <div class="tag-list">
-              <span>C++20</span>
-              <span>CUDA</span>
-              <span>Python</span>
-              <span>SQL</span>
-              <span>MPI</span>
-              <span>Docker</span>
-              <span>Kubernetes</span>
-              <span>PyTorch</span>
-              <span>Verilog</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact" style="--delay:0.42s">
-      <div class="container contact-box">
-        <h2>Contact</h2>
-        <p>If you are interested in research collaboration, systems engineering, or internship opportunities, feel free to reach out.</p>
-        <div class="cta-group">
-          <a class="btn btn-primary" href="mailto:sz73@illinois.edu">sz73@illinois.edu</a>
-          <a class="btn btn-ghost" href="https://linkedin.com/in/songhao-zhang" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-ghost" href="https://github.com/Edirent" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Songhao Zhang</p>
     </div>
+    <!-- /intro-content -->
+  </section>
+  <!-- /intro -->
+
+  <!-- about section
+  ================================================== -->
+  <section id="about">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>About</h5>
+
+        <div class="intro-info">
+          <img src="images/IMG_3734(20231010-140620).JPG" alt="Profile Picture">
+
+          <p class="lead">
+            I am a Mathematics and Computer Science student at the University of Illinois Urbana-Champaign.
+            I focus on high-performance systems across parallel algorithms, compiler optimization, GPU kernel design,
+            distributed runtime, and low-latency infrastructure.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /section-intro -->
+
+    <div class="row about-content">
+      <div class="col-six tab-full">
+        <h3>Personal Info</h3>
+
+        <ul class="info-list">
+          <li>
+            <strong>Name:</strong>
+            <span>Songhao Zhang</span>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <span><a href="mailto:sz73@illinois.edu">sz73@illinois.edu</a></span>
+          </li>
+          <li>
+            <strong>Phone:</strong>
+            <span><a href="tel:+17085139409">+1-708-513-9409</a></span>
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <span><a target="_blank" rel="noopener" href="https://github.com/Edirent">github.com/Edirent</a></span>
+          </li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <span><a target="_blank" rel="noopener" href="https://linkedin.com/in/songhao-zhang">linkedin.com/in/songhao-zhang</a></span>
+          </li>
+        </ul>
+        <!-- /info-list -->
+      </div>
+
+      <div class="col-six tab-full">
+        <h3>Core Strengths</h3>
+
+        <ul class="skill-bars">
+          <li>
+            <div class="progress percent95"><span>95%</span></div>
+            <strong>Parallel Algorithms</strong>
+          </li>
+          <li>
+            <div class="progress percent95"><span>95%</span></div>
+            <strong>Compiler Optimization</strong>
+          </li>
+          <li>
+            <div class="progress percent90"><span>90%</span></div>
+            <strong>GPU Kernel Design</strong>
+          </li>
+          <li>
+            <div class="progress percent90"><span>90%</span></div>
+            <strong>Distributed Runtime</strong>
+          </li>
+          <li>
+            <div class="progress percent85"><span>85%</span></div>
+            <strong>HFT Infrastructure</strong>
+          </li>
+        </ul>
+        <!-- /skill-bars -->
+      </div>
+    </div>
+
+    <div class="row button-section">
+      <div class="col-twelve">
+        <a href="#contact" title="Contact" class="button stroke smoothscroll">Contact Me</a>
+        <a href="https://github.com/Edirent" target="_blank" rel="noopener" title="GitHub" class="button button-primary">Visit GitHub</a>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
+  <!-- resume Section
+  ================================================== -->
+  <section id="Work" class="grey-section">
+    <div class="row resume-timeline">
+      <div class="col-twelve resume-header">
+        <h2>Experience</h2>
+      </div>
+      <!-- /resume-header -->
+
+      <div class="col-twelve">
+        <div class="timeline-wrap">
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-briefcase"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Machine Learning Engineer Intern | TAQA Water Solutions</h3>
+              <p>Aug 2025 - Dec 2025 | Abu Dhabi, UAE</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Key Contributions</h4>
+              <p>
+                - Architected a distributed anomaly detection system for 150+ facility streams and built a hybrid RAG pipeline with sparse and dense retrieval.<br>
+                - Designed a Hierarchical Memory Router using permutation matrices and HNSW indices for cross-table temporal dependency alignment.<br>
+                - Deployed local LLM serving on constrained clusters and reduced inference latency by 40% via pipeline parallelism and optimized KV-cache management.
+              </p>
+            </div>
+          </div>
+          <!-- /timeline-block -->
+
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-university"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Research Assistant (Advisor: Prof. Yufei Ding) | UC San Diego</h3>
+              <p>May 2025 - Aug 2025 | San Diego, CA</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Quantum Systems Research</h4>
+              <p>
+                - Designed a massively parallel frequency-domain decoding method for Quantum LDPC codes, replacing O(N^2) sparse-matrix operations with O(N log N) polynomial evaluation.<br>
+                - Implemented custom CUDA kernels for algebraic parameter determination, achieving less than 1ms real-time compilation and 10x lower logical error rates.
+              </p>
+            </div>
+          </div>
+          <!-- /timeline-block -->
+
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-university"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Research Assistant (Advisor: Prof. Fan Lai) | UIUC</h3>
+              <p>May 2024 - May 2025 | Champaign, IL</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>Distributed ML Runtime</h4>
+              <p>
+                - Co-developed Morpheus, a serving system for Diffusion Transformers, and implemented a compiler-assisted scheduler that exploits spatial sparsity.<br>
+                - Engineered dynamic work-stealing and asynchronous memory migration protocols, increasing throughput by 2.1x and reducing tail latency by 20% on A100 GPUs.
+              </p>
+            </div>
+          </div>
+          <!-- /timeline-block -->
+        </div>
+        <!-- /timeline-wrap -->
+      </div>
+      <!-- /col-twelve -->
+    </div>
+    <!-- /resume-timeline -->
+
+    <div class="row resume-timeline">
+      <div class="col-twelve resume-header">
+        <h2>Education &amp; Publications</h2>
+      </div>
+      <!-- /resume-header -->
+
+      <div class="col-twelve">
+        <div class="timeline-wrap">
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>University of Illinois Urbana-Champaign</h3>
+              <p>Aug 2023 - May 2027 | Champaign, IL</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>B.S. in Mathematics and Computer Science</h4>
+              <p>GPA: 3.85 / 4.0</p>
+            </div>
+          </div>
+          <!-- /timeline-block -->
+
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-book"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Mobius: A Millisecond-Scale Compiler for Bivariate Bicycle Codes via Frequency-Domain Decomposition</h3>
+              <p>Submitted to ASPLOS 2026</p>
+            </div>
+
+            <div class="timeline-content">
+              <p>Authors: S. Zhang, K. Yin, Y. Ding.</p>
+            </div>
+          </div>
+          <!-- /timeline-block -->
+
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-book"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>Morpheus: High-Throughput Serving for Diffusion Transformers with Distributed Cache Scheduling</h3>
+              <p>Submitted to SOSP 2026</p>
+            </div>
+
+            <div class="timeline-content">
+              <p>Authors: S. Xie, C. Zhang, S. Zhang, P. He, F. Lai, T. Zhong.</p>
+            </div>
+          </div>
+          <!-- /timeline-block -->
+        </div>
+        <!-- /timeline-wrap -->
+      </div>
+      <!-- /col-twelve -->
+    </div>
+    <!-- /resume-timeline -->
+  </section>
+  <!-- /Work -->
+
+  <!-- services Section
+  ================================================== -->
+  <section id="MORE">
+    <div class="overlay"></div>
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Projects &amp; Skills</h5>
+      </div>
+    </div>
+    <!-- /section-intro -->
+
+    <div class="row services-content">
+      <div id="owl-slider" class="owl-carousel services-list">
+        <div class="service">
+          <span class="icon"><i class="icon-window"></i></span>
+
+          <div class="service-content">
+            <h3>Helix: HFT Infrastructure &amp; Execution Engine</h3>
+
+            <p class="desc">
+              - Built deterministic order-book replay in C++ with cache-line aligned memory pools and zero-copy data paths.<br>
+              - Achieved less than 800ns tick-to-trade latency in simulation via lock-free ring buffer design.
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+
+        <div class="service">
+          <span class="icon"><i class="icon-layers"></i></span>
+
+          <div class="service-content">
+            <h3>SREGym: AI-Native SRE Benchmark Platform</h3>
+
+            <p class="desc">
+              - Built a Kubernetes environment orchestrating 86+ reliability benchmarks across DeathStarBench and TiDB.<br>
+              - Added multi-modal observability (logs, traces, eBPF). Advisor: Prof. Tianyin Xu.
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+
+        <div class="service">
+          <span class="icon"><i class="icon-window"></i></span>
+
+          <div class="service-content">
+            <h3>Core Specialties</h3>
+
+            <p class="desc">
+              # Parallel Algorithms # Compiler Optimization<br>
+              # GPU Kernel Design # Distributed Runtime # HFT Infrastructure
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+
+        <div class="service">
+          <span class="icon"><i class="icon-earth"></i></span>
+
+          <div class="service-content">
+            <h3>Languages &amp; Tools</h3>
+
+            <p class="desc">
+              # C++20 # CUDA # Python # SQL # MPI<br>
+              # Docker # Kubernetes # PyTorch # Verilog
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+      </div>
+      <!-- /services-list -->
+    </div>
+    <!-- /services-content -->
+  </section>
+  <!-- /MORE -->
+
+  <!-- contact
+  ================================================== -->
+  <section id="contact">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Contact</h5>
+        <h1>Feel free to reach out.</h1>
+      </div>
+    </div>
+    <!-- /section-intro -->
+
+    <div class="row contact-form">
+      <div class="col-twelve">
+        <form id="contactform" action="//formspree.io/sz73@illinois.edu" method="POST">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="_replyto" placeholder="Your Email">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+
+        <div id="message-warning"></div>
+        <div id="message-success">
+          <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+        </div>
+      </div>
+    </div>
+    <!-- /contact-form -->
+
+    <div class="row contact-info">
+      <div class="col-four tab-full">
+        <div class="icon">
+          <i class="icon-mail"></i>
+        </div>
+
+        <h5>Email</h5>
+
+        <p><a href="mailto:sz73@illinois.edu">sz73@illinois.edu</a></p>
+      </div>
+
+      <div class="col-four tab-full collapse">
+        <div class="icon">
+          <i class="icon-phone"></i>
+        </div>
+
+        <h5>Phone</h5>
+
+        <p><a href="tel:+17085139409">+1-708-513-9409</a></p>
+      </div>
+
+      <div class="col-four tab-full">
+        <div class="icon">
+          <i class="icon-earth"></i>
+        </div>
+
+        <h5>Online</h5>
+
+        <p>
+          <a target="_blank" rel="noopener" href="https://github.com/Edirent">GitHub</a><br>
+          <a target="_blank" rel="noopener" href="https://linkedin.com/in/songhao-zhang">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    <!-- /contact-info -->
+  </section>
+  <!-- /contact -->
+
+  <!-- footer
+  ================================================== -->
+  <footer>
+    <div class="row">
+      <div class="col-six tab-full">
+        <div class="copyright">
+          <span>Songhao Zhang</span>
+        </div>
+      </div>
+
+      <div class="col-six tab-full pull-right social">
+        <ul class="footer-social">
+          <li><a target="_blank" rel="noopener" href="https://github.com/Edirent"><i class="fa fa-github"></i></a></li>
+          <li><a target="_blank" rel="noopener" href="https://linkedin.com/in/songhao-zhang"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+
+      <div id="go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+      </div>
+    </div>
+    <!-- /row -->
   </footer>
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <!-- Java Script
+  ================================================== -->
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
